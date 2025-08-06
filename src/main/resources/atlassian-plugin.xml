@@ -1,0 +1,23 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">com/davidehringer/atlassian/bamboo/maven/maven-extractor-16x16.png</param>
+        <param name="plugin-logo">com/davidehringer/atlassian/bamboo/maven/maven-extractor-72x72.png</param>
+    </plugin-info>
+
+    <resource type="i18n" name="com.davidehringer.atlassian.bamboo.maven language" location="com/davidehringer/atlassian/bamboo/maven/english"/>
+
+    <taskType name="Maven POM Value Extractor" class="com.davidehringer.atlassian.bamboo.maven.MavenVariableTask" key="maven-pom-parser-plugin">
+      <description>Extracts values from Maven POMs and sets build variables using the values.</description>
+      <category name="builder"/>
+      
+      <configuration class="com.davidehringer.atlassian.bamboo.maven.MavenVariableTaskConfigurator"/>
+      
+      <resource type="freemarker" name="edit" location="com/davidehringer/atlassian/bamboo/maven/editMavenVariableTask.ftl"/>
+      <resource type="download" name="icon" location="com/davidehringer/atlassian/bamboo/maven/maven-extractor-72x72.png"/>
+      
+      <help link="maven.extractor.config.help.link" title="maven.extractor.config.help.title" />
+    </taskType>
+</atlassian-plugin>
