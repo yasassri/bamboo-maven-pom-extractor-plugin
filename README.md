@@ -5,7 +5,7 @@ Upgraded version of the `bamboo-maven-pom-extractor-plugin` plugin from Bamboo v
 Also moving this code from original location https://bitbucket.org/dehringer/bamboo-maven-pom-extractor-plugin to Github for better accessibility and maintenance.
 
 ## Download and Install
-You can download the latest version of the plugin from the [Releases](https://github.com/yasassri/bamboo-maven-pom-extractor-plugin/releases) section of this repository. Go to the Releases page and download the .jar file for the version you want to use. Once downloaded you can install this to Bamboo as a custom plugin. If you have migrated from a older Bamboo version with older plugin, installing the plugin will make sure your Jobs work seamlessly. 
+You can download the latest version of the plugin from the [Releases](https://github.com/yasassri/bamboo-maven-pom-extractor-plugin/releases) section of this repository. Go to the Releases page and download the .jar file for the version you want to use. Once downloaded you can install this to Bamboo as a custom plugin. If you have migrated from a older Bamboo version with older plugin, re-installing this plugin will make sure your Jobs work seamlessly. 
 
 ## Main changes done
 
